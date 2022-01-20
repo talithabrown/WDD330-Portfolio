@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Week 2 Team Assignment</title>
+</head>
+
+<body>
+
+    <h1>Week 2 Team Assignment</h1>
+
+    <input type="text" id="user-input" name="user-input">
+    <button onclick="copyInput()">Enter</button>
+    <div id="display-div"></div>
+
+    <input type="number" id="number" name="number">
+    <button onclick="sumNumber()">Sum Number</button>
+    <div id="number-div"></div>
+
+    <input type="number" id="add1" name="number1">
+    <span> + </span>
+    <input type="number" id="add2" name="number2">
+    <button onclick="add()">Add</button>
+    <div id="add-div"></div>
+
+    <script>
+        function copyInput(){
+            let userInput = document.getElementById("user-input").value 
+            document.getElementById("display-div").innerHTML = userInput
+        }
+        function sumNumber(){
+            let number = Number(document.getElementById("number").value)
+            let sum = 0
+            range = number
+            for (let i = 0; i < range; i++) {
+                sum = number + sum
+                number-- 
+            }
+            document.getElementById("number-div").innerHTML = sum
+        }
+        function add(){
+            let number1 = Number(document.getElementById("add1").value)
+            let number2 = Number(document.getElementById("add2").value)
+            let sum = number1 + number2
+            document.getElementById("add-div").innerHTML = sum
+        }
+
+    </script>
+
+</body>
+
+</html>
