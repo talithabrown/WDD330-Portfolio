@@ -1,0 +1,11 @@
+div {
+    border: 1px solid black;
+}
+
+.tictactoe-board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}

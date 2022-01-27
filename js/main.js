@@ -18,6 +18,14 @@ const links = [
     {
       label: "Week 3 team assignment",
       url: "week3/array-cardio-day-1.html"
+    },
+    {
+      label: "Week 4 code example",
+      url: "week4/code_exercises/index.html"
+    },
+    {
+      label: "Week 4 team assignment",
+      url: "week4/tictactoe/tictactoe.html"
     }
 ]
 
