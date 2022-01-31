@@ -26,6 +26,14 @@ const links = [
     {
       label: "Week 4 team assignment",
       url: "week4/tictactoe/tictactoe.html"
+    },
+    {
+      label: "Week 5 code example",
+      url: "week5/code_exercise/index.html"
+    },
+    {
+      label: "Week 5 team assignment",
+      url: ""
     }
 ]
 
