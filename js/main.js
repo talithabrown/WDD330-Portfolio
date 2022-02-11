@@ -33,8 +33,14 @@ const links = [
     },
     {
       label: "Week 5 team assignment",
-      url: ""
+      url: "week5/team_assignment/index.html"
+    },
+    {
+      label: "Week 6 ToDo List",
+      url: "todo/index.html"
     }
+
+    
 ]
 
 for (let i = 0; i < links.length; i++) {
