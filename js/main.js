@@ -50,6 +50,14 @@ const links = [
     {
       label: "Week 8 team assignment",
       url: "week8/team/index.html"
+    },
+    {
+      label: "Week 9 code example",
+      url: "week9/code-example/index.html"
+    },
+    {
+      label: "Week 9 team assignment",
+      url: "week9/team/index.html"
     }
     
 ]
