@@ -1,0 +1,25 @@
+
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='description' content='form validation example'>
+  <title>Form Validation Example</title>
+  <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+  
+    <form novalidate>
+        <p>
+          <label for="mail">
+            <span>Please enter an email address:</span>
+            <input type="email" id="mail" name="mail" required minlength="8">
+            <span class="error" aria-live="polite"></span>
+          </label>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <script src='script.js'></script>
+</body>
+</html>
