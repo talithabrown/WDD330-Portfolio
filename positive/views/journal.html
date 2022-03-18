@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Journal Page</title>
+    <meta name="description" content="Journal page for Positive website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/positive/css/main.css">
+    <link rel="stylesheet" href="/positive/css/medium.css">
+    <link rel="stylesheet" href="/positive/css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+       
+    </header>
+    <nav>
+        <a href="/positive/index.html"><img src="/positive/images/house_icon.png" alt="home icon"></a>
+        <a href="/positive/views/gratitude.html"><img src="/positive/images/hearts_icon.png"></a>
+        <a href="/positive/views/affirmations.html"><img src="/positive/images/happy_icon.png"></a>
+        <a class="active" href="/positive/views/journal.html"><img src="/positive/images/journal_icon.png"></a>
+    </nav>
+    
+    <main id="journal-main">
+        <h1>Journal</h1>
+        <p>Your mind is a powerful thing. When you fill it with positive thoughts, your life will start to change.</p>
+        
+        <button id="generate-prompt">Generate prompt</button>
+
+        <form id='journal-form'>
+
+            <label>Prompt : <textarea id="prompt-textarea" required></textarea></label>
+
+            <label>Date : <input id="journal-entry-date" type="date" required></label>
+
+            <textarea id="journal-textarea" required>
+
+            </textarea>
+
+            <input id="submit-input" type="submit" value="Save">
+        </form>
+
+        <h2>Past Entries</h2>
+        
+    </main>
+
+    <footer>
+    
+    </footer>
+
+    <script type="module" src="/positive/js/journal.js"></script>
+
+</body>
+
+</html>
