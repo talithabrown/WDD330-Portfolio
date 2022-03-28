@@ -29,15 +29,15 @@
     <main class="gratitude-main">
         <h1>Gratitude</h1>
 
-        <form onsubmit="saveGratitudeLiist(), loadGratitudeList()">
-            <input type="date" id="gratitude-date" required>
-            <ol>
-                <li><input id="gratitude-input-1" required></li>
-                <li><input id="gratitude-input-2" required></li>
-                <li><input id="gratitude-input-3" required></li>
-            </ol>
-            <input type="submit" value="Save">
-        </form>
+        <div class="gratitude-container-div">
+            <form onsubmit="saveGratitudeLiist(), loadGratitudeList()">
+                <label>Date: </label><input type="date" id="gratitude-date" required>
+                <label class="gratitude-label">1. </label><input id="gratitude-input-1" required>
+                <label class="gratitude-label">2. </label><input id="gratitude-input-2" required>
+                <label class="gratitude-label">3. </label><input id="gratitude-input-3" required>
+                <input id="gratitude-save" type="submit" value="Save">
+            </form>
+        </div>
 
         <h2>Gratitude History</h2>
         <div id="graditude-history-div">

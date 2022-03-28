@@ -24,6 +24,10 @@ function loadGratitudeList() {
 
 function buildGratitudeDiv (list) {
     let GratitudeHistoryDiv = document.getElementById("graditude-history-div")
+
+    let hr = document.createElement("hr")
+    GratitudeHistoryDiv.appendChild(hr)
+
     let h3 = document.createElement("h3")
     h3.innerHTML = list[0]
     let ul = document.createElement("ul")

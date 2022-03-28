@@ -2,12 +2,7 @@ import journalPrompts from "../js/journal_prompts.js"
 
 function getJournalPrompt() {
     let randomNumber = Math.floor(Math.random() * 31);
-
-    for (let i = 0; i < journalPrompts.prompts.length; i++) {
-        if (journalPrompts.prompts[i].id === randomNumber) {
-            return journalPrompts.prompts[i].text
-        }
-    }
+    return journalPrompts.prompts[randomNumber].text
 }
 
 function displayPrompt() {
@@ -36,6 +31,8 @@ function loadEntryList() {
 
 function buildEntryDiv(list) {
     let div = document.createElement("div")
+    let hr = document.createElement("hr")
+    div.appendChild(hr)
     for (let i = 0; i < list.length; i++) {
         let p = document.createElement("p")
         p.innerHTML = list[i]

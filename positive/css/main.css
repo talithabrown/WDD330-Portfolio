@@ -5,30 +5,34 @@ h1 {
     font-family: 'League Spartan', sans-serif;
 }
 
+
 body {
     font-family: 'PT Sans', sans-serif;
-    background-image: url("/positive/images/black-background-small.jpg");
-    color: white
+    /* background-image: url("/positive/images/black-background-small.jpg"); */
+    background-color: black;
+    color: white;
+    padding-bottom: 50px;
+    max-width: 500px;
+    margin: auto;
 }
 
 nav {
-    /* background-color: white;
-    opacity: 70%; */
     overflow: hidden;
     position: fixed;
     bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    max-width: 500px;
+    margin: auto;
 }
 
 nav img {
-    width: 50%;
+    width: 40%;
 }
 
 nav a {
     background-color: white;
-    opacity: 70%;
     text-align: center;
     padding: 7px;
 }
@@ -74,19 +78,99 @@ main {
     color: white
 }
 
+.gratitude-container-div { 
+    border: white 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.gratitude-main form {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 8px;
+    width: 250px;
+}
+
+.gratitude-label {
+    text-align: right;
+}
+
+#gratitude-date {
+    margin-bottom: 15px;
+}
+
+#gratitude-save {
+    grid-column: 1 / 3;
+    margin-top: 15px;
+    padding: 0px 20px;
+    max-width: 100px;
+}
+
 /* -------------------------------------------------------------
 ------------------------Journal Page--------------------------
 ------------------------------------------------------------- */
 
+#journal-form {
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 #journal-textarea {
     width: 100%;
     min-height: 200px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
 #prompt-textarea {
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+#generate-prompt {
+    display: block;
+    margin-bottom: 30px;
+}
+
+#submit-input, #generate-prompt{
+    border-radius: 10px;
+    padding: 2px 20px;
+}
+
+#journal-entry-date {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+/* -------------------------------------------------------------
+------------------------Affirmations Page-----------------------
+------------------------------------------------------------- */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.single-affirmation-div {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+}
+
+.single-affirmation-div hr {
+    grid-column: 1 / 3;
+    width: 100%;
+}
+
+.single-affirmation-div button {
+    max-height: 35px;
+    margin: auto;
+}
+
+#create-input-div {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
